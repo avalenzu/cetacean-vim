@@ -29,7 +29,7 @@ call plug#end()
 let s:current_file=expand('<sfile>:p')
 if !exists("*EditVimrc")
   function EditVimrc()
-    execute 'edit' s:current_file
+    execute 'split' s:current_file
   endfunction
 endif
 if !exists("*SourceVimrc")
@@ -45,6 +45,9 @@ nnoremap <leader>sv :call SourceVimrc()<CR>
 syntax enable
 set background=light
 colorscheme solarized
+
+" Misc. mapings
+imap jj <Esc>
 
 " Enable deoplete
 let g:deoplete#enable_at_startup = 1
