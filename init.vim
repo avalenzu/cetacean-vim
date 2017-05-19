@@ -1,3 +1,10 @@
+" Make sure vim-plug is installed
+let s:vim_plug_file="~/.local/share/nvim/site/autoload/plug.vim"
+if !filereadable(expand(s:vim_plug_file))
+    echom system("curl -fLo " . s:vim_plug_file . " --create-dirs "
+    \ . "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
+endif
+
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
