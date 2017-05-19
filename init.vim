@@ -1,13 +1,17 @@
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'altercation/vim-colors-solarized'
+Plug 'craigemery/vim-autotag'
+Plug 'gregsexton/gitv'
+Plug 'sbdchd/neoformat'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
-Plug 'gregsexton/gitv'
+Plug 'tpope/vim-sleuth'
 Plug 'tyok/ack.vim'
 Plug 'tyok/nerdtree-ack'
+Plug 'weynhamz/vim-plugin-minibufexpl'
 
 " Initialize plugin system
 call plug#end()
