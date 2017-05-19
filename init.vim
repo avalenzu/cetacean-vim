@@ -10,10 +10,12 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'craigemery/vim-autotag'
+Plug 'ervandew/supertab'
 Plug 'gregsexton/gitv'
 Plug 'sbdchd/neoformat'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sleuth'
 Plug 'tyok/ack.vim'
@@ -43,3 +45,6 @@ nnoremap <leader>sv :call SourceVimrc()<CR>
 syntax enable
 set background=light
 colorscheme solarized
+
+" Enable deoplete
+let g:deoplete#enable_at_startup = 1
