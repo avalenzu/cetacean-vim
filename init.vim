@@ -46,8 +46,16 @@ syntax enable
 set background=light
 colorscheme solarized
 
+" Buffer configuration
+set hidden
+nmap ff :bnext<CR>
+nmap FF :bprevious<CR>
+
 " Misc. mapings
 imap jj <Esc>
 
 " Enable deoplete
 let g:deoplete#enable_at_startup = 1
+
+" Gitv configuration
+let g:Gitv_OpenPreviewOnLaunch = 0
